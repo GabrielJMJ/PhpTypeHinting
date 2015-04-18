@@ -1,0 +1,22 @@
+{
+    "name": "gabrieljmj/phptypehinting",
+    "description": "Quick fix for type hinting with PHP",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Gabriel Jacinto",
+            "email": "gamjj74@hotmail.com",
+            "homepage": "http://gabrieljmj.github.io"
+        }
+    ],
+    "keywords": ["type hinting", "quick fix"],
+    "require": {
+        "php": ">=5.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "Gabrieljmj\\PhpTypeHinting\\": "src/Gabrieljmj/PhpTypeHinting/",
+            "Test\\Gabrieljmj\\PhpTypeHinting\\": "tests/Gabrieljmj/PhpTypeHinting/"
+        }
+    }
+}

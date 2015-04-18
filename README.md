@@ -5,8 +5,9 @@ Recommendation: don't use it.
 
 ## Usage
 ```php
-<?php
-require_once 'TypeHinting.php';
+use Gabrieljmj\PhpTypeHinting\TypeHinting;
+
+TypeHinting::init();
 
 function hello(string $name) {
     echo 'Hello ' . $name;
