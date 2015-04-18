@@ -2,7 +2,7 @@
 /**
  * Gabrieljmj\PhpTypeHinting
  *
- * @author Gabriel Jacinto aka. GabrielJMJ <gamjj74@hotmail.com
+ * @author Gabriel Jacinto aka. GabrielJMJ <gamjj74@hotmail.com>
  * @license MIT License
  */
 
@@ -54,10 +54,12 @@ class TypeHinting
             $error['passed_type']
         ) = $matches;
 
-        $error['type'] = class_exists($error['type']) ? 'an instance of ' . $error['type'] : $error['type'];
+        if (class_exists($error['type'])) {
+            return false;
+        }
 
         if ($error['type'] !== $error['passed_type']) {
-            throw new InvalidArgumentException('Argument ' . $error['argument_number'] . ' passed to ' . $error['function'] . '() must be ' . $error['type'] . ' type, ' . $error['passed_type'] . ' given', $error_level);
+            throw new \InvalidArgumentException('Argument ' . $error['argument_number'] . ' passed to ' . $error['function'] . '() must be ' . $error['type'] . ' type, ' . $error['passed_type'] . ' given', $error_level);
         }
 
         return true;
