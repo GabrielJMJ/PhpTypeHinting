@@ -1,7 +1,12 @@
 TypeHinting
 ===========
-Using type hinting with PHP. <br />
-Recommendation: don't use it.
+Quick fix for type hinting with PHP.
+
+## Install
+Composer:
+```json
+"gabrieljmj/phptypehinting": "dev-master"
+```
 
 ## Usage
 ```php
