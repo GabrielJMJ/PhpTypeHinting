@@ -24,7 +24,7 @@ but
 ```php
 hello(87);
 ```
-will trigger
+will get
 ```
 Fatal error: Uncaught exception 'InvalidArgumentException' with message 'Argument 1 passed to hello() must be string type, integer given' ...
 ```
