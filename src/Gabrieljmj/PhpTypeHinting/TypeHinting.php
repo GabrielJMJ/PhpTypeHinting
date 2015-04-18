@@ -13,7 +13,7 @@ class TypeHinting
     /**
      * Regexp to indentify the parameters of the error message
      */
-    const REGEXP = '/^Argument ([0-9]) passed to ([a-zA-Z0-9._]+)\\(\\) must be an instance of ([a-zA-Z]+), ([a-zA-Z]+) given/';
+    const REGEXP = '/^Argument ([0-9]) passed to ([a-zA-Z0-9._]+)\\(\\) must be an instance of ([a-zA-Z._]+), ([a-zA-Z._]+) given/';
 
     /**
      * Initializes the type hinting handler
